@@ -74,4 +74,8 @@ To run the code, you need the following libraries and packages:
 
 Install the required packages using pip:
 
+<<<<<<< HEAD
 `pip install -r requirements.txt`
+=======
+`pip install -r requirements.txt`
+>>>>>>> 169ba421e982343b46994318f6d381ef8a62b6fe

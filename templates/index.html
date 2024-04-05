@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Personality Traits Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Personality Profiling and Sentiment Analysis</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-4">
+                <textarea id="input-text" class="form-control" rows="15" placeholder="Enter your sentences here..."></textarea>
+                <button onclick="predict()" class="btn btn-primary btn-block mt-3 custom-button">Predict</button>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4" id="output">
+            <!-- Predicted results will be displayed here -->
+        </div>
+        <div class="col-md-12">
+            <div id="pentagon-chart-container" class="chart-container">
+                <canvas id="pentagon-chart"></canvas>
+            </div>
+            <div id="sentiment-chart-container" class="chart-container">
+                <canvas id="sentiment-chart"></canvas>
+            </div>
+        </div>        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
