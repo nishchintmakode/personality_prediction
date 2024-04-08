@@ -73,4 +73,6 @@ To run the code, you need the following libraries and packages:
 - Numpy
 
 Install the required packages using pip:
-```pip install -r requirements.txt```
+```bash
+pip install -r requirements.txt
+```
